@@ -1,0 +1,219 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    margin-top: 120px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.head div{
+
+    border-right:  1px solid black;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+/* Base styles for the section */
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+  
+  /* Image slider styles */
+  .image-slider {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .image-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Image details styles */
+  .img-detail {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .img-detail > div {
+    width: calc(50% - 10px); /* Two items per row */
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px ;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+  }
+  .img-detail div .icon{
+    padding: 0px;
+    font-size: 20px;
+    display: block;
+    margin: 0px auto;
+  }
+  
+  .img-detail h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .img-detail p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+    margin: 0px auto;
+  box-shadow: none;
+    gap: 30px; /* Add some space between the buttons */
+  }
+  
+  .btns button {
+    background-color: rgb(228, 38, 38);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1; /* Makes buttons take equal space */
+    text-align: center; /* Centers text within buttons */
+    white-space: nowrap; /* Prevents text from wrapping to multiple lines */
+  }
+  .btns button:hover {
+    background-color: darkorange;
+  }
+  
+  
+  /* Responsive styles */
+
+
+  @media (max-width: 1100px) {
+    .btns {
+      margin-top: 15px;
+      gap: 20px; 
+    }
+    
+    .btns button {
+      padding: 15px 25px;
+    }
+  }
+
+
+
+
+
+
+
+  @media (max-width: 900px) {
+    .image-slider {
+     width: 100%;
+    }
+  
+    .img-detail {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .img-detail > div {
+      width: calc(50% - 5px);
+    }
+    .btns button{
+      padding: 20px 40px;
+    }
+    .btns{
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .first-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-slider {
+      width: 100%;
+     }
+   
+     .img-detail {
+       width: 100%;
+       margin-top: 30px;
+     }
+   
+     .img-detail > div {
+       width: calc(50% - 5px);
+     }
+  
+    .btns button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+  @media (max-width: 600px) {
+    .first-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    .head h1{
+      font-size: 16px;
+    }
+    .head h3{
+      font-size: 16px;
+    }
+    .head p{
+      font-size: 14px;
+    }
+  
+    .image-slider {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  
+    .img-detail {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img-detail > div {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .btns {
+      flex-direction: column;
+    }
+  
+    .btns button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

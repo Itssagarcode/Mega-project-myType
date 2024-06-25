@@ -1,0 +1,295 @@
+/* Base styles */
+a{
+text-decoration: none;
+
+}
+.hero {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* Ensure hero container is relative for child elements */
+  }
+  
+  .filter-side {
+    width: 30%;
+    height: 95vh; /* Full height */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: sticky; /* Sticky positioning */
+    top: 20px; /* Adjust top position as needed */
+  }
+  
+  .filter-side h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .filter-side h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .filter-side ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .filter-side li {
+    margin: 10px 0;
+  }
+  
+  .filter-side label {
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .rent-range {
+    margin: 20px 0;
+  }
+  
+  .rent-range h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .rent-range span {
+    color: #555;
+  }
+  
+  .rent-range input {
+    width: 70%;
+  }
+  
+  .availability-box,
+  .tenants-box,
+  .furnishing-box,
+  .Property-box {
+    margin: 20px 0;
+  }
+  
+  .availability-box legend,
+  .tenants-box legend,
+  .furnishing-box legend,
+  .Property-box legend {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .availability-box form,
+  .tenants-box form,
+  .furnishing-box form,
+  .Property-box form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .availability-box label,
+  .tenants-box label,
+  .furnishing-box label,
+  .Property-box label {
+    width: calc(50% - 10px); /* 3 in a row with some gap */
+    margin: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .main-side {
+    width: 65%;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Added for button placement */
+  }
+  
+  .card h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .img-side{
+    
+  }
+  
+  .img-side img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Limit maximum width */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .detail {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .detail div {
+    flex: 1 1 45%; /* Two items per row */
+    margin-bottom: 10px;
+    /* background: rgb(230, 73, 73); */
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+    color:#555;
+    padding: 10px 11px;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  
+  .detail div span {
+    display: block;
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center; /* Center the button */
+  }
+  
+  button:hover {
+    background-color: darkorange;
+  }
+
+
+  
+  /* Responsive styles */
+  
+  @media (max-width: 1200px) {
+
+
+    .img-side img {
+      width: 250px;;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .detail div {
+        flex: 1 1 45%; /* Two items per row */
+        margin-bottom: 6px;
+        color: #fff;
+        padding: 8px 9px;
+        margin-left: 5px;
+        font-size: 16px;
+      }
+  
+    .card {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .item {
+      flex-direction: column; /* Change item layout to column */
+      align-items: center; /* Center items */
+      text-align: center; /* Center text */
+    }
+  
+    .img-side img {
+      margin-bottom: 20px; /* Add space below image */
+      width: 250px;
+    }
+
+  
+    .detail {
+      flex-direction: row; /* Change detail layout to column */
+      align-items: center; /* Center items */
+    }
+  
+    .detail div {
+      width: 100%; /* Full width for detail items */
+    }
+  }
+
+
+  @media (max-width: 700px) {
+    .hero {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .filter-side {
+      width: 100%; /* Full width for filter side */
+      margin-bottom: 20px; /* Add space between filter and main */
+      position: static;
+      /* overflow-y: visible; */
+      height: auto;
+    }
+  
+    .main-side {
+      width: 100%; /* Full width for main side */
+      margin-left: 0; /* Remove left margin */
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .hero{
+        margin: 0px;
+        width: 100vw;
+    }
+    .filter-side {
+      padding: 10px;
+      font-size: 12px;
+    }
+    .img-side img{
+        width: 250px;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    .card h1 {
+      font-size: 18px;
+    }
+  
+    .card p {
+      font-size: 12px;
+    }
+  }
+  
+
+
+
+  /* ------------------------------ */

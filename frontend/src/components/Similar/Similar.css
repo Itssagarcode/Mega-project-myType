@@ -1,0 +1,230 @@
+/* src/components/Similar.css */
+
+.second-section {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the flex container */
+  }
+  
+  .overview-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .overview {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-bottom: 20px;
+    gap: 20px; /* Add gap to create space between the rows */
+  }
+  
+  .overview h2 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .overview div {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 10px); /* Two columns layout with space between */
+    margin-bottom: 20px;
+    padding-right: 10px; /* Add padding for spacing between columns */
+    box-sizing: border-box;
+    border-bottom: 0.5px dotted rgb(117, 109, 109);
+  }
+  
+  .overview div:nth-child(odd) {
+    padding-right: 20px; /* Add extra padding on odd elements for more spacing */
+  }
+  
+  .overview div svg {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .overview h4 {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .overview p {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  
+  .description {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* src/components/SimilarProperties.css */
+  
+  .similar-properties-section {
+    width: 38%; /* Adjust width if necessary to fit the layout */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .similar-properties-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .property {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .property img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .property-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .property-details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .property-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .property-details .distance {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .price-area {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .more-properties-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .more-properties-button:hover {
+    background-color: #006666;
+  }
+
+  .map{
+    margin: 30px;
+  }
+  .map h2{
+    margin: 20px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+
+
+  /* Responsive styles */
+
+@media (max-width: 1200px) {
+
+
+  .overview-container,
+  .similar-properties-section {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .property {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .price-area {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview h2,
+  .similar-properties-section h2 {
+    font-size: 20px;
+  }
+  .overview div {
+    width: 100%; /* Stack the columns */
+  }
+
+  .property-details h3 {
+    font-size: 16px;
+  }
+
+  .more-properties-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .map h2 {
+    font-size: 24px;
+  }
+}
+  
+  
+  
+  

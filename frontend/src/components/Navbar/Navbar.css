@@ -1,0 +1,115 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  z-index: 1000;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: hsl(98, 21%, 62%); */
+   background: #fff;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.navbar .logo {
+  width: 120px;
+  height: 50px;
+  margin-left: 20px;
+  font-weight: 900;
+}
+
+.navbar-mid {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+}
+.navbar-mid #sell{
+    background: #49557e;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 80px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  background:  rgb(231, 41, 64);
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #e13939;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: hsl(12, 19%, 85%);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-menu li button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .navbar-mid,
+  .navbar-right {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
