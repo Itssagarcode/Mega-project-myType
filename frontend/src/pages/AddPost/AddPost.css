@@ -1,0 +1,128 @@
+.add-post {
+    display: flex;
+    background: #f2f2f2;
+  }
+  
+  .add-post .addpost-sidebar {
+    width: 20%;
+    padding: 20px;
+    height: 100vh;
+    margin-right: 100px;
+    background: #fff;
+    margin-top: 100px;
+  }
+  
+  .add-post .sidebar-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    color: #006666;
+    margin-bottom: 0px;
+    background-color: #fff;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .13), 0 1px 4px 0 rgba(0, 0, 0, .11);
+    border-top: 1px solid #111;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .sidebar-item.active {
+    background-color: #f1f1f1;
+    border-left: 6px solid #008080;
+    font-weight: bold;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .content {
+    height: 80vh;
+    overflow-y: auto;
+    margin-top: 100px;
+    background: #fff;
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 48%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group .input-group .unit {
+    margin-left: 10px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .save-continue {
+    display: block;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .save-continue:hover {
+    background-color: #006666;
+  }
+  
+  
+  
+  

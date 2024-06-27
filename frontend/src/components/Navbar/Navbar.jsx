@@ -20,7 +20,7 @@ const Navbar = () => {
         <li onClick={() => handleMenuClick('home')} className={menu === 'home' ? 'active' : ''}>Home</li>
         </Link>
         <li onClick={() => handleMenuClick('contact-us')} className={menu === 'contact-us' ? 'active' : ''}>Contact Us</li>
-        <li id='sell' onClick={() => handleMenuClick('sell')} className={menu === 'sell' ? 'active' : ''}>Post Your Property</li>
+       <Link to='/addpost'><li id='sell' onClick={() => handleMenuClick('sell')} className={menu === 'sell' ? 'active' : ''}>Post Your Property</li></Link> 
       </ul>
       <div className="navbar-right">
         <Link to= '/auth'>
